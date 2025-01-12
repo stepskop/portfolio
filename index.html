@@ -23,6 +23,7 @@
 				secondary: "#080808",
 				highlight: "#2B2B2B",
 				text: "#FFFFFF",
+				lightText: "#A1A1A1",
 				accent: "#9C40EB",
 			  },
 			  gridTemplateColumns: {
@@ -42,7 +43,7 @@
 				<div class="flex flex-col w-2/3">
 					<p class="text-accent font-firaCode">Hello, I'm</p>
 					<p class="text-text text-9xl font-lalezar">Stepan</p>
-					<p class="text-[#A1A1A1] text-lg font-epilogue">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use.</p>
+					<p class="text-lightText text-lg font-epilogue">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use.</p>
 					<div class="flex flex-row w-full gap-8 mt-8">
 						<a href="https://github.com/stepskop" target="_blank"><img class="hover:opacity-60 ease-in-out duration-200 hover:scale-105" src="./assets/images/github.svg" alt=""></a>
 						<a href="https://linkedin.com/in/stepskop" target="_blank"><img class="hover:opacity-60 ease-in-out duration-200 hover:scale-105" src="./assets/images/linkedin.svg" alt=""></a>
@@ -55,7 +56,7 @@
 		</section>
 		<!-- SKILLSET -->
 		<section class="flex flex-col justify-center items-center min-h-fit text-text font-primary">
-			<div id="primary-skillset" class="grid grid-cols-7 xl:grid-cols-none xl:grid-rows-7 rounded-2xl border border-highlight w-fit xl:w-full divide-y">
+			<div id="primary-skillset" class="grid grid-cols-7 bg-secondary xl:grid-cols-none grid-rows-3 xl:grid-rows-7 rounded-2xl border border-highlight w-fit xl:w-full divide-y">
 				<div class="flex justify-center items-center col-start-1 col-end-8 xl:col-end-[15] row-start-1 row-end-2 xl:row-end-4">
 					<h1 class="">Primary skillset</h1>
 				</div>
@@ -76,15 +77,59 @@
 				</div>
 			</div>
 			<div class="h-24 w-[1px] bg-highlight"></div>
-			<div id="secondary-skillset" class="grid grid-cols-4 xl:grid-cols-none grid-rows-2 xl:grid-rows-6 rounded-2xl border border-highlight divide-y">
+			<div id="secondary-skillset" class="grid grid-cols-4 bg-secondary xl:grid-cols-none grid-rows-2 xl:grid-rows-6 rounded-2xl border border-highlight divide-y">
 				<div class="flex justify-center items-center col-start-1 col-end-5 xl:col-end-[9] row-start-1 row-end-2 xl:row-end-4">
 					<h1 class="">Familiar with</h1>
 				</div>
 			</div>
+			<div class="h-24 w-[1px] bg-highlight"></div>
 		</section>
 		<!-- EXPERIENCES -->
-		<section class="w-full min-h-screen">
+		<section class="flex flex-col items-center min-h-screen text-text font-primary">
+			<div class="w-full h-fit rounded-2xl border border-highlight">
+				<div class="flex w-full justify-center items-center h-[79px] border-b border-accent rounded-t-2xl bg-secondary">
+					<h1>Experiences</h1>
+				</div>
+				<div class="flex flex-col items-center px-8 xl:px-32">
+					<div class="h-8 w-[1px] bg-highlight"></div>
+					<div class="flex flex-col w-full h-48 bg-secondary border border-highlight rounded-lg p-4">
+						<div class="flex flex-row gap-4 h-4/6">
+							<img src="./assets/images/experiences/haxagon.svg" alt="">
+							<div class="flex flex-col ">
+								<div class="flex flex-row text-xs gap-2">
+									<p id="duration-from" class="text-lightText">April 2024</p>
+									<p class="text-lightText">-</p>
+									<p id="duration-to" class="text-lightText">Present</p>
+								</div>
+								<h1 class="text-3xl">Backend developer</h1>
+								<h2 class="text-lg text-accent">HAXAGON s.r.o.</h2>
+							</div>
+						</div>
+						<div class="flex items-end h-2/6">
+							<div class="flex flex-row items-center gap-4">
+								<p class="text-sm">Remote</p>
+								<div class="bg-accent w-[5px] h-[5px] rounded-full"></div>
+								<p class="text-sm">Part-time</p>
+								<div class="bg-accent w-[5px] h-[5px] rounded-full"></div>
+								<p class="text-sm">Prague</p>
+							</div>
+						</div>
+					</div>
+					<div class="h-8 w-[1px] bg-highlight"></div>
+					<div class="flex w-full h-48 bg-yellow-500">
 
+					</div>
+					<div class="h-8 w-[1px] bg-highlight"></div>
+					<div class="flex w-full h-48 bg-blue-500">
+
+					</div>
+					<div class="h-8 w-[1px] bg-highlight"></div>
+					<div class="flex w-full h-48 bg-green-500">
+
+					</div>
+					<div class="h-8 w-[1px] bg-highlight"></div>
+				</div>
+			</div>
 		</section>
 		<!-- STUDIES -->
 		<section class="w-full min-h-screen">
