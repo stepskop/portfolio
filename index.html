@@ -19,7 +19,7 @@
 			},
 			extend: {
 				fontSize: {
-					xxs: "0.6rem"
+					xxs: "0.7rem"
 				},
 				colors: {
 					primary: '#0B0B0B',
@@ -42,9 +42,9 @@
 	<title>Portfolio</title>
 </head>
 <body class="flex bg-primary w-screen items-center justify-center">
-	<main class="w-full px-4 sm:px-8 md:px-20 max-w-[1280px]">
+	<main class="relative flex flex-col items-center max-w-[1280px] border-highlight border-x pb-16">
 		<!-- HERO -->
-		<section class="flex w-full min-h-screen justify-center items-center">
+		<section class="flex w-full min-h-screen justify-center items-center px-4 sm:px-8 md:px-20">
 			<div class="flex w-full h-full flex-col lg:flex-row gap-12 lg:gap-24 justify-center items-center text-center lg:text-left py-8">
 				<div class="flex flex-col w-full lg:w-2/3">
 					<p class="text-accent font-firaCode">Hello, I'm</p>
@@ -61,7 +61,9 @@
 			</div>
 		</section>
 		<!-- SKILLSET -->
-		<section class="flex flex-col justify-center items-center min-h-fit text-text font-primary">
+		<hr class="w-full border-highlight">
+		<div class="h-24 w-[1px] bg-highlight"></div>
+		<section class="flex flex-col justify-center items-center min-h-fit text-text font-primary px-4 sm:px-8 md:px-20">
 			<div id="primary-skillset" class="grid grid-cols-3 xs:grid-cols-4 sm:grid-cols-7 bg-secondary xl:grid-cols-none grid-rows-3 xl:grid-rows-7 rounded-2xl border border-highlight w-fit xl:w-full xl:divide-y">
 				<div class="flex justify-center items-center col-start-1 col-end-4 xs:col-end-5 sm:col-end-8 xl:col-end-[15] row-start-1 row-end-2 xl:row-end-4 border-b border-highlight xl:border-none">
 					<h1 class="text-md md:text-base">Primary skillset</h1>
@@ -88,10 +90,10 @@
 					<h1 class="text-md md:text-base">Familiar with</h1>
 				</div>
 			</div>
-			<div class="h-24 w-[1px] bg-highlight"></div>
 		</section>
+		<div class="h-24 w-[1px] bg-highlight"></div>
 		<!-- EXPERIENCES -->
-		<section class="flex flex-col items-center min-h-screen text-text font-primary">
+		<section class="flex flex-col items-center min-h-screen text-text font-primary px-4 sm:px-8 md:px-20">
 			<div class="w-full h-fit rounded-2xl border border-highlight">
 				<div class="flex w-full justify-center items-center h-[79px] border-b border-accent rounded-t-2xl bg-secondary">
 					<h1 class="text-md md:text-base">Experiences</h1>
@@ -101,14 +103,97 @@
 				</div>
 			</div>
 		</section>
+		<div class="h-24 w-[1px] bg-highlight"></div>
 		<!-- STUDIES -->
-		<section class="w-full min-h-screen">
+		<section class="w-full flex justify-center px-4 sm:px-8 md:px-20">
+			<div class="w-fit xl:w-full flex flex-col bg-secondary border border-highlight rounded-2xl text-text font-primary overflow-x-hidden">
+				<div class="flex w-full justify-center items-center h-[79px] border-b border-[#2C41FF] rounded-t-2xl bg-secondary">
+					<h1 class="text-md md:text-base">Studies</h1>
+				</div>
+				<div id="studies" class="flex flex-col xl:flex-row items-center w-full">
+					<div class="flex-col h-52 w-full p-4 border-b xl:border-r xl:border-b-0 border-highlight">
+						<div class="flex flex-row gap-2 h-1/2">
+							<img class="h-full" src="./assets/images/studies/42.svg" alt="">
+							<div class="flex flex-col h-full">
+								<div class="flex flex-row text-xxs sm:text-xs gap-2">
+									<p class="text-lightText">Sep 2024</p>
+									<p class="text-lightText">-</p>
+									<p class="text-lightText">Present</p>
+								</div>
+								<h1 class="text-md sm:text-lg md:text-2xl">Computer science</h1>
+								<a class="flex" href="https://42network.org/" target="_blank">
+									<h2 class="text-xs sm:text-lg text-[#2469CF]">42network</h2>
+								</a>
+							</div>
+						</div>
+						<div class="flex flex-col justify-end h-1/2">
+							<div class="flex flex-row items-center gap-2 sm:gap-4">
+								<div class="text-xxs sm:text-xs md:text-sm">University</div>
+								<div class="bg-[#2469CF] w-[5px] h-[5px] rounded-full"></div>
+								<div class="text-xxs sm:text-xs md:text-sm">Prague</div>
+							</div>
+						</div>
+					</div>
 
+
+					<div class="flex-col h-52 w-full p-4 border-b xl:border-r xl:border-b-0 border-highlight">
+						<div class="flex flex-row gap-2 h-1/2">
+							<img class="h-full" src="./assets/images/studies/cisco.svg" alt="">
+							<div class="flex flex-col h-full">
+								<div class="flex flex-row text-xxs sm:text-xs gap-2">
+									<p class="text-lightText">Jan 2021</p>
+									<p class="text-lightText">-</p>
+									<p class="text-lightText">3 months</p>
+								</div>
+								<h1 class="text-md sm:text-lg md:text-2xl">CyberOps</h1>
+								<a class="flex" href="https://cisco.com/" target="_blank">
+									<h2 class="text-xs sm:text-lg text-[#0CA2DA]">Cisco</h2>
+								</a>
+							</div>
+						</div>
+						<div class="flex flex-col justify-end h-1/2">
+							<div class="flex flex-row items-center gap-2 sm:gap-4">
+								<div class="text-xxs sm:text-xs md:text-sm">Course</div>
+								<div class="bg-[#0CA2DA] w-[5px] h-[5px] rounded-full"></div>
+								<div class="text-xxs sm:text-xs md:text-sm">Remote</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="flex-col h-52 w-full p-4">
+						<div class="flex flex-row gap-2 h-1/2">
+							<img class="h-full" src="./assets/images/studies/ssps.svg" alt="">
+							<div class="flex flex-col h-full">
+								<div class="flex flex-row text-xxs sm:text-xs gap-2">
+									<p class="text-lightText">Sep 2020</p>
+									<p class="text-lightText">-</p>
+									<p class="text-lightText">4 years</p>
+								</div>
+								<h1 class="text-md sm:text-lg md:text-2xl">Cybersecurity</h1>
+								<a class="flex" href="https://ssps.cz/" target="_blank">
+									<h2 class="text-xs sm:text-lg text-[#4A8ABD]">SSPS</h2>
+								</a>
+							</div>
+						</div>
+						<div class="flex flex-col justify-end h-1/2">
+							<div class="flex flex-row items-center gap-2 sm:gap-4">
+								<div class="text-xxs sm:text-xs md:text-sm">High school</div>
+								<div class="bg-[#4A8ABD] w-[5px] h-[5px] rounded-full"></div>
+								<div class="text-xxs sm:text-xs md:text-sm">Prague</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
 		</section>
+		<div class="h-24 w-[1px] bg-highlight"></div>
 		<!-- PROJECTS -->
-		<section class="w-full min-h-screen">
+		<section class="w-full px-4 sm:px-8 md:px-20">
 
 		</section>
+		<div class="h-24 w-[1px] bg-highlight"></div>
+		<hr class="w-full border-highlight">
 	</main>
 	<script src="./js/skillset.js"></script>
 	<script src="./js/experience.js"></script>

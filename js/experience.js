@@ -119,13 +119,13 @@ const experiencesElement = document.getElementById("experiences")
 
 for (let i = 0; i < experiencesData.length; i++) {
 	const element = experiencesData[i];
-	renderExperience(element)
+	renderExperience(element, experiencesElement)
 }
 
-function renderExperience(experience) {
+function renderExperience(experience, parentElement) {
 	const experienceDiv = document.createElement("div")
-	experienceDiv.classList.value = "flex flex-col w-full h-full sm:h-48 bg-secondary border border-highlight rounded-lg p-3 md:p-4 gap-2"
-	experiencesElement.appendChild(experienceDiv);
+	experienceDiv.classList.value = "flex flex-col w-full h-full bg-secondary border border-highlight rounded-lg p-3 md:p-4 gap-2"
+	parentElement.appendChild(experienceDiv);
 
 	const smallDurationDiv = document.createElement("div")
 	smallDurationDiv.classList.value = "hidden flex-row text-xxs sm:text-xs gap-2"
@@ -187,7 +187,7 @@ function renderExperience(experience) {
 
 	const lineElement = document.createElement("div")
 	lineElement.classList.value = "h-4 sm:h-8 w-[1px] bg-highlight"
-	experiencesElement.appendChild(lineElement)
+	parentElement.appendChild(lineElement)
 }
 
 function durationElement(duration) {
