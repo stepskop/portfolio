@@ -98,7 +98,7 @@ const experiencesData = [
 		name: "Coding tutor",
 		company: {
 			name: "Logiscool",
-			link: "https://www.logiscool.com/cz/"
+			link: "https://logiscool.com/cz/"
 		},
 		duration: {
 			from: "Jan 2022",
@@ -124,7 +124,7 @@ for (let i = 0; i < experiencesData.length; i++) {
 
 function renderExperience(experience, parentElement) {
 	const experienceDiv = document.createElement("div")
-	experienceDiv.classList.value = "flex flex-col w-full h-full bg-secondary border border-highlight rounded-lg p-3 md:p-4 gap-2"
+	experienceDiv.classList.value = "flex flex-col w-full h-full bg-secondary border border-highlight rounded-lg p-3 md:p-4 gap-2 group"
 	parentElement.appendChild(experienceDiv);
 
 	const smallDurationDiv = document.createElement("div")
@@ -176,14 +176,28 @@ function renderExperience(experience, parentElement) {
 	experienceDiv.appendChild(description)
 
 	const experienceDetailsDiv = document.createElement("div")
-	experienceDetailsDiv.classList.value = "flex items-end h-1/6 sm:h-2/6"
+	experienceDetailsDiv.classList.value = "flex items-center h-1/6 sm:h-2/6 w-full"
 	experienceDiv.appendChild(experienceDetailsDiv);
 
 	const detailsRow = document.createElement("div")
-	detailsRow.classList.value = "flex flex-row items-center gap-2 sm:gap-4"
+	detailsRow.classList.value = "flex flex-row items-center gap-2 sm:gap-4 w-full"
 	experienceDetailsDiv.appendChild(detailsRow)
 
 	detailsRow.append(smallText(experience.details.office), dot(experience.color), smallText(experience.details.type), dot(experience.color), smallText(experience.details.location))
+
+	if (experience.company.link)
+	{
+		const linkIcon = document.createElement("a")
+		linkIcon.href = experience.company.link
+		linkIcon.target = "blank_"
+		linkIcon.classList.value = "lg:hidden lg:group-hover:flex h-full justify-end items-center hover:opacity-70 ease-in-out duration-300"
+		experienceDetailsDiv.appendChild(linkIcon)
+
+		const linkIconImg = document.createElement("img")
+		linkIconImg.classList.value = "flex h-full"
+		linkIconImg.src = "./assets/images/link.svg"
+		linkIcon.appendChild(linkIconImg)
+	}
 
 	const lineElement = document.createElement("div")
 	lineElement.classList.value = "h-4 sm:h-8 w-[1px] bg-highlight"
