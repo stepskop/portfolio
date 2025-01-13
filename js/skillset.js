@@ -2,18 +2,18 @@ const primarySkillsetGrid = document.getElementById("primary-skillset");
 //const primaryTechnologies = ["nestjs", "mongo", "express", "prisma", "socketio", "nodejs", "linux", "typescript", "clang", "sveltekit", "capacitor", "playwright", "docker", "gitlab"]
 const primaryTechnologies = [
 	{ name: "nestjs", link: "https://nestjs.com" },
-	{ name: "mongo", link: "https://www.mongodb.com" },
+	{ name: "mongo", link: "https://mongodb.com" },
 	{ name: "expressjs", link: "https://expressjs.com" },
-	{ name: "prisma", link: "https://www.prisma.io" },
+	{ name: "prisma", link: "https://prisma.io" },
 	{ name: "socketio", link: "https://socket.io" },
 	{ name: "nodejs", link: "https://nodejs.org" },
-	{ name: "linux", link: "https://www.linux.org" },
-	{ name: "typescript", link: "https://www.typescriptlang.org" },
-	{ name: "c", link: "https://www.gnu.org/software/gnu-c-manual/gnu-c-manual" },
+	{ name: "linux", link: "https://gnu.org" },
+	{ name: "typescript", link: "https://typescriptlang.org" },
+	{ name: "c", link: "https://gnu.org/software/gnu-c-manual/gnu-c-manual" },
 	{ name: "sveltekit", link: "https://kit.svelte.dev" },
 	{ name: "capacitor", link: "https://capacitorjs.com" },
 	{ name: "playwright", link: "https://playwright.dev" },
-	{ name: "docker", link: "https://www.docker.com" },
+	{ name: "docker", link: "https://docker.com" },
 	{ name: "gitlab", link: "https://gitlab.com" }
   ];
 
@@ -25,9 +25,9 @@ const secondaryTechnologies = [
 	{ name: "vue", link: "https://vuejs.org" },
 	{ name: "react", link: "https://reactjs.org" },
 	{ name: "kubernetes", link: "https://kubernetes.io" },
-	{ name: "ansible", link: "https://www.ansible.com" },
-	{ name: "postgres", link: "https://www.postgresql.org" },
-	{ name: "figma", link: "https://www.figma.com" },
+	{ name: "ansible", link: "https://ansible.com" },
+	{ name: "postgres", link: "https://postgresql.org" },
+	{ name: "figma", link: "https://figma.com" },
 	{ name: "tailwind", link: "https://tailwindcss.com" },
 	{ name: "golang", link: "https://go.dev" }
   ]
