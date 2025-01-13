@@ -15,10 +15,8 @@ function renderSkillset(gridElement, technologies, defaultClass) {
 		newImg.src = `./assets/images/tech/${technologies[i]}.svg`
 		newImg.classList.add(...defaultClass.split(' '))
 		console.log(window.innerWidth);
-		if (i === (technologies.length / 2) - 1)
+		if (i < technologies.length - 1)
 			newImg.classList.add("xl:border-r")
-		else if (i < technologies.length - 1)
-			newImg.classList.add("border-r")
 		gridElement.appendChild(newImg)
 	}
 }
