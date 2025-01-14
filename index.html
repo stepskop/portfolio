@@ -64,7 +64,7 @@
 	  </script>
 </head>
 <body class="flex bg-primary w-screen items-center justify-center">
-	<main class="relative flex flex-col items-center max-w-[1280px] border-highlight border-x pb-16">
+	<main class="relative flex flex-col items-center max-w-[1280px] border-highlight border-x">
 		<!-- HERO -->
 		<section class="flex w-full min-h-screen justify-center items-center px-4 sm:px-8 md:px-20">
 			<div class="flex w-full h-full flex-col lg:flex-row gap-10 sm:gap-12 lg:gap-24 justify-center items-center text-center lg:text-left py-8">
@@ -226,11 +226,52 @@
 		</section>
 		<div class="h-24 w-[1px] bg-highlight"></div>
 		<!-- PROJECTS -->
-		<section class="w-full px-4 sm:px-8 md:px-20">
-
+		<section class="px-4 sm:px-8 md:px-20">
+			<div class="rounded-2xl border border-highlight flex flex-col h-fit overflow-hidden">
+				<div class="flex justify-center items-center h-[79px] border-b border-[#BC1164] bg-secondary">
+					<h1 class="text-md md:text-base text-text">Projects</h1>
+				</div>
+				<div class="flex flex-row flex-wrap p-4 gap-4 justify-center">
+					<a href="https://github.com/stepskop/fdf" target="_blank" class="w-min group flex rounded-2xl border border-highlight flex-col h-64 overflow-hidden aspect-square">
+						<div class="relative">
+							<img class="group-hover:blur group-hover:grayscale group-hover:brightness-50 ease-in-out duration-300" src="./assets/images/projects/fdf.webp" alt="">
+							<p class="hidden group-hover:flex text-text absolute max-w-64 top-0 p-4 text-xs ease-in-out duration-300">3D heatmap rasterizer written in C.<br>Rendered projection can be controlled, including variable height scale.</p>
+						</div>
+						<div class="h-full w-full flex bg-secondary justify-center items-center border-t border-highlight">
+							<p class="text-text text-xs">Fdf</p>
+						</div>
+					</a>
+					<a href="https://github.com/stepskop/minishell" target="_blank" class="group flex rounded-2xl border border-highlight flex-col h-64 overflow-hidden aspect-square">
+						<div class="relative">
+							<img class="group-hover:blur group-hover:grayscale group-hover:brightness-50 ease-in-out duration-300" src="./assets/images/projects/minishell.webp" alt="">
+							<p class="hidden group-hover:flex text-text absolute max-w-64 top-0 p-4 text-xs ease-in-out duration-300">Small Bash inspired implementation of UNIX shell.<br>Including builtins, pipe and redirection management, variable and wildcard expansion and last but not least support of flow control operators.</p>
+						</div>
+						<div class="h-full w-full flex bg-secondary justify-center items-center border-t border-highlight">
+							<p class="text-text text-xs">minishell</p>
+						</div>
+					</a>
+					<a href="https://github.com/Delidock/delidock" target="_blank" class="group flex rounded-2xl border border-highlight flex-col h-64 overflow-hidden aspect-square">
+						<div class="relative">
+							<img class="group-hover:blur group-hover:grayscale group-hover:brightness-50 ease-in-out duration-300" src="./assets/images/projects/delidock.webp" alt="">
+							<p class="hidden group-hover:flex text-text absolute max-w-64 top-0 p-4 text-xs ease-in-out duration-300">Smart delivery box ecosystem including frontend mobile client and backend.<br>Utilizing WebSocket and WebRTC.</p>
+						</div>
+						<div class="h-full w-full flex bg-secondary justify-center items-center border-t border-highlight">
+							<p class="text-text text-xs">Delidock</p>
+						</div>
+					</a>
+				</div>
+			</div>
 		</section>
 		<div class="h-24 w-[1px] bg-highlight"></div>
 		<hr class="w-full border-highlight">
+		<footer class="w-full h-16 flex flex-col sm:flex-row px-8 items-center justify-center gap-2">
+			<div class="flex flex-row gap-2 justify-center sm:justify-start items-center grayscale brightness-[100] h-1/3">
+				<a href="https://github.com/stepskop" target="_blank"><img class="h-6 hover:opacity-60 ease-in-out duration-200 hover:scale-105" src="./assets/images/links/github.svg" alt=""></a>
+				<a href="https://linkedin.com/in/stepskop" target="_blank"><img class="h-6 hover:opacity-60 ease-in-out duration-200 hover:scale-105" src="./assets/images/links/linkedin.svg" alt=""></a>
+				<a href="mailto:skopek.stepan@gmail.com" target="_blank"><img class="h-6 hover:opacity-60 ease-in-out duration-200 hover:scale-105" src="./assets/images/links/email.svg" alt=""></a>
+			</div>
+			<p class="text-lightText text-xs w-full flex justify-center sm:justify-end">Štěpán Škopek</p>
+		</footer>
 	</main>
 	<script src="./js/skillset.js"></script>
 	<script src="./js/experience.js"></script>
