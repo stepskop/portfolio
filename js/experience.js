@@ -54,7 +54,7 @@ const experiencesData = [
 			location: "Prague"
 		},
 		color: "#6565B2",
-		description: "Creation and management of website about mentoring programs including CMS built on top of firestore."
+		description: "Creation and management of website in Sveltekit about mentoring programs including CMS built on top of firestore."
 	},
 	{
 		name: "CyberSec CTF creator",
@@ -92,7 +92,7 @@ const experiencesData = [
 			location: "Prague"
 		},
 		color: "#9562FE",
-		description: "Creation of custom framework for E2E testing. Managing CI/CD pipelines. Developing E2E and ACL testing."
+		description: "Creation of custom framework for E2E testing built on top of Playwright. Managing CI/CD pipelines. Developing E2E and ACL testing."
 	},
 	{
 		name: "Coding tutor",
@@ -124,7 +124,7 @@ for (let i = 0; i < experiencesData.length; i++) {
 
 function renderExperience(experience, parentElement) {
 	const experienceDiv = document.createElement("div")
-	experienceDiv.classList.value = "flex flex-col w-full h-full bg-secondary border border-highlight rounded-lg p-3 md:p-4 gap-2 group"
+	experienceDiv.classList.value = "flex flex-col w-full h-64 bg-secondary border border-highlight rounded-lg p-3 md:p-4 gap-2 group"
 	parentElement.appendChild(experienceDiv);
 
 	const smallDurationDiv = document.createElement("div")
@@ -133,7 +133,7 @@ function renderExperience(experience, parentElement) {
 	experienceDiv.appendChild(smallDurationDiv)
 
 	const experienceInfoDiv = document.createElement("div")
-	experienceInfoDiv.classList.value = "flex flex-row gap-2 sm:gap-4 h-1/6 sm:h-4/6"
+	experienceInfoDiv.classList.value = "flex flex-row gap-2 sm:gap-4 min-h-1/4"
 	experienceDiv.appendChild(experienceInfoDiv);
 
 	const image = document.createElement("img")
@@ -171,12 +171,12 @@ function renderExperience(experience, parentElement) {
 	experienceDiv.appendChild(smallCompanyLink)
 
 	const description = document.createElement("p")
-	description.classList.value = "sflex text-lightText text-sm h-4/6"
+	description.classList.value = "sflex text-lightText text-sm h-full"
 	description.innerHTML = experience.description
 	experienceDiv.appendChild(description)
 
 	const experienceDetailsDiv = document.createElement("div")
-	experienceDetailsDiv.classList.value = "flex items-center h-1/6 sm:h-2/6 w-full"
+	experienceDetailsDiv.classList.value = "flex flex-row items-end h-fit w-full"
 	experienceDiv.appendChild(experienceDetailsDiv);
 
 	const detailsRow = document.createElement("div")
