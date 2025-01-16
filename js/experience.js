@@ -124,7 +124,7 @@ for (let i = 0; i < experiencesData.length; i++) {
 
 function renderExperience(experience, parentElement) {
 	const experienceDiv = document.createElement("div")
-	experienceDiv.classList.value = "flex flex-col w-full h-64 bg-secondary border border-highlight rounded-lg p-3 md:p-4 gap-2 group"
+	experienceDiv.classList.value = "flex flex-col w-full h-72 sm:h-64 bg-secondary border border-highlight rounded-lg p-3 md:p-4 gap-2 group"
 	parentElement.appendChild(experienceDiv);
 
 	const smallDurationDiv = document.createElement("div")
