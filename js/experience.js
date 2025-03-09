@@ -1,8 +1,27 @@
-const experiencesData = [
+const experiencesData = [	
+	{
+		name: "Backend engineer",
+		company: {
+			name: "Apify",
+			link: "https://apify.com"
+		},
+		duration: {
+			from: "March 2025",
+			to: "Present"
+		},
+		image: "apify.svg",
+		details: {
+			office: "Hybrid",
+			type: "Part-time",
+			location: "Prague"
+		},
+		color: "#98D800",
+		description: "Working on backend and infra of the big scale and highly available systems. Deploying custom made web scrapers and automation tools."
+	},
 	{
 		name: "Infra / DevOps",
 		company: {
-			name: "HAXAGON s.r.o.",
+			name: "HAXAGON",
 			link: "https://haxagon.cz"
 		},
 		duration: {
@@ -21,7 +40,7 @@ const experiencesData = [
 	{
 		name: "Backend developer",
 		company: {
-			name: "HAXAGON s.r.o.",
+			name: "HAXAGON",
 			link: "https://haxagon.cz"
 		},
 		duration: {
@@ -59,7 +78,7 @@ const experiencesData = [
 	{
 		name: "CyberSec CTF creator",
 		company: {
-			name: "HAXAGON s.r.o.",
+			name: "HAXAGON",
 			link: "https://haxagon.cz"
 		},
 		duration: {
@@ -78,7 +97,7 @@ const experiencesData = [
 	{
 		name: "Testing engineer",
 		company: {
-			name: "HAXAGON s.r.o.",
+			name: "HAXAGON",
 			link: "https://haxagon.cz"
 		},
 		duration: {
