@@ -16,7 +16,7 @@ const experiencesData = [
 			location: "Prague"
 		},
 		color: "#98D800",
-		description: "Working on backend and infra of the big scale and highly available systems. Deploying custom made web scrapers and automation tools."
+		description: "Maintaining API, backend services and infra, of the big scale and highly available systems. Deploying custom made web scrapers and automation tools."
 	},
 	{
 		name: "Infra / DevOps",
