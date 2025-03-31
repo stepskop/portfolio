@@ -101,8 +101,8 @@ const experiencesData = [
 			link: "https://haxagon.cz"
 		},
 		duration: {
-			from: "Jul 2023",
-			to: "Present"
+			from: "Apr 2023",
+			to: "2 years"
 		},
 		image: "haxagon.svg",
 		details: {
