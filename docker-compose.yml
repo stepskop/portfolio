@@ -1,7 +1,9 @@
 services:
   portfolio:
-    build: ./
+    image: stepskop/servant:alpine
     restart: always
     container_name: portfolio
     ports:
       - 88:8080
+    volumes:
+      - .:/var/www/html
