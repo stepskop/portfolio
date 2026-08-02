@@ -1,4 +1,4 @@
-const experiencesData = [	
+const experiencesData = [
 	{
 		name: "Backend engineer",
 		company: {
@@ -19,26 +19,7 @@ const experiencesData = [
 		description: "Maintaining API, backend services and infra, of the big scale and highly available systems. Deploying custom made web scrapers and automation tools."
 	},
 	{
-		name: "Infra / DevOps",
-		company: {
-			name: "HAXAGON",
-			link: "https://haxagon.cz"
-		},
-		duration: {
-			from: "May 2024",
-			to: "Present"
-		},
-		image: "haxagon.svg",
-		details: {
-			office: "Remote",
-			type: "Part-time",
-			location: "Prague"
-		},
-		color: "#9562FE",
-		description: "Creating and maintaining Ansible roles, Building new deployment images for AWS, extending monitoring using linux system level monitoring for Docker containers."
-	},
-	{
-		name: "Backend developer",
+		name: "Backend / Infra",
 		company: {
 			name: "HAXAGON",
 			link: "https://haxagon.cz"
@@ -54,7 +35,7 @@ const experiencesData = [
 			location: "Prague"
 		},
 		color: "#9562FE",
-		description: "Backend logic and features including API controllers and DB management including permissions and overall Access Control List."
+		description: "Backend logic and features including API controllers and DB management including permissions and overall Access Control List. Creating and maintaining Ansible roles, Building new deployment images for AWS, extending monitoring using linux system level monitoring for Docker containers. Maintaining the CI/CD pipeline."
 	},
 	{
 		name: "Fullstack developer",
