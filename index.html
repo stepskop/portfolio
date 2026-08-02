@@ -11,7 +11,7 @@
 	<meta name="apple-mobile-web-app-title" content="Stepan" />
 	<link rel="manifest" href="./icon/site.webmanifest" />
 
-	<title>Stepan | Software Developer</title>
+	<title>Stepan | Software Engineer</title>
 	<meta name="title" content="Stepan | Software Developer" />
 	<meta name="description" content="Passionate software engineer, with job as his hobby. Back-end and infrastructure. Tech enthusiast." />
 	<meta property="og:type" content="website" />
@@ -71,7 +71,7 @@
 				<div class="flex flex-col w-full lg:w-2/3">
 					<p class="text-accent font-firaCode text-lg md:text-xl">Hello, I'm</p>
 					<p class="text-text text-8xl md:text-9xl font-lalezar">Stepan</p>
-					<p class="text-lightText text-sm sm:text-md md:text-lg font-epilogue">I am <span class="text-text font-bold text-md sm:text-lg md:text-xl">a passionate software developer</span>. One may say I am lucky that I found my job hobby. Strongest point of mine is desire to solve the problems. It is even stronger if I know there is a solution somewhere. I am very nerdy about new technologies, so if I read or watch something, it is probably about some new thing coming to the computer world. Talking about specifics, I am more into networking and data flow in terms of programming, so all the backend stuff is a thing for me, but I also like areas of DevOps and infrastructure.<br>Overall, delivering a whole working system is what I enjoy the most!</p>
+					<p class="text-lightText text-sm sm:text-md md:text-lg font-epilogue">I am <span class="text-text font-bold text-md sm:text-lg md:text-xl">a passionate software engineer</span>, lucky that my job is also my hobby. Solving problems is my strongest suit, and knowing a solution is out there only makes me more stubborn. A nerd for new technology, drawn to networking and distributed systems, so the backend is my home ground, with DevOps and infrastructure right after.<br>Above all, I enjoy delivering a whole working system.</p>
 					<div class="flex flex-row h-6 md:h-10 lg:h-full w-full gap-8 mt-4 sm:mt-8 justify-center lg:justify-start">
 						<a href="https://github.com/stepskop" target="_blank"><img class="h-full hover:opacity-60 ease-in-out duration-200 hover:scale-105" src="./assets/images/links/github.svg" alt=""></a>
 						<a href="https://linkedin.com/in/stepskop" target="_blank"><img class="h-full hover:opacity-60 ease-in-out duration-200 hover:scale-105" src="./assets/images/links/linkedin.svg" alt=""></a>
@@ -231,6 +231,22 @@
 					<h1 class="text-md md:text-base text-text">Projects</h1>
 				</div>
 				<div class="flex flex-row flex-wrap p-4 gap-4 justify-center">
+					<div class="group relative w-fit h-fit">
+						<div class="flex rounded-2xl border border-highlight flex-col h-64 overflow-hidden aspect-square">
+							<div class="relative">
+								<img class="group-hover:blur group-hover:grayscale group-hover:brightness-50 ease-in-out duration-300" src="./assets/images/projects/servant.webp" alt="">
+								<p class="hidden group-hover:flex text-text absolute max-w-64 top-0 p-4 text-xs ease-in-out duration-300">HTTP/1.1 webserver written in C++.<br>A single thread serves many clients at once - every socket is non-blocking and multiplexed through one poll() loop. Shipped as a Docker base image - it serves this very portfolio.</p>
+							</div>
+							<a href="https://github.com/stepskop/servant" target="_blank" class="h-full w-full flex gap-2 bg-secondary justify-center items-center border-t border-highlight">
+								<p class="text-text text-xs">servant</p>
+								<img class="hidden group-hover:flex" src="./assets/images/link.svg" alt="">
+							</a>
+						</div>
+						<span class="absolute -top-2 -right-3 z-10 flex flex-row items-center gap-1.5 rounded-full border border-highlight bg-primary px-2 py-1 text-xxs text-[#4ADE80]/70">
+							<span class="flex h-1.5 w-1.5 rounded-full bg-[#4ADE80] animate-pulse"></span>
+							serving this site
+						</span>
+					</div>
 					<div class="w-min group flex rounded-2xl border border-highlight flex-col h-64 overflow-hidden aspect-square">
 						<div class="relative">
 							<img class="group-hover:blur group-hover:grayscale group-hover:brightness-50 ease-in-out duration-300" src="./assets/images/projects/fdf.webp" alt="">

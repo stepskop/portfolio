@@ -19,7 +19,7 @@ const experiencesData = [
 		description: "Maintaining API, backend services and infra, of the big scale and highly available systems. Deploying custom made web scrapers and automation tools."
 	},
 	{
-		name: "Backend / Infra",
+		name: "Backend / Infra engineer",
 		company: {
 			name: "HAXAGON",
 			link: "https://haxagon.cz"
