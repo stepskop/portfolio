@@ -4,4 +4,4 @@ services:
     restart: always
     container_name: portfolio
     ports:
-      - 88:80
+      - 88:8080
