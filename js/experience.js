@@ -12,7 +12,7 @@ const experiencesData = [
 		image: "apify.svg",
 		details: {
 			office: "Hybrid",
-			type: "Part-time",
+			type: "Full-time",
 			location: "Prague"
 		},
 		color: "#98D800",
