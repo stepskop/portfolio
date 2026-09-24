@@ -16,7 +16,7 @@ const experiencesData = [
 			location: "Prague"
 		},
 		color: "#98D800",
-		description: "Maintaining API, backend services and infra, of the big scale and highly available systems. Deploying custom made web scrapers and automation tools."
+		description: "Building API, backend services, IAM and infra, of the big scale and highly available systems. Deploying and scaling custom data automation tools."
 	},
 	{
 		name: "Backend / Infra engineer",
@@ -35,7 +35,7 @@ const experiencesData = [
 			location: "Prague"
 		},
 		color: "#9562FE",
-		description: "Backend logic and features including API controllers and DB management including permissions and overall Access Control List. Creating and maintaining Ansible roles, Building new deployment images for AWS, extending monitoring using linux system level monitoring for Docker containers. Maintaining the CI/CD pipeline."
+		description: "Building backend of interactive CTF platform, including API, services and IAM. Maintaining Ansible roles for our instance agents on AWS and their system-level monitoring. Deploying infra on Kubernetes."
 	},
 	{
 		name: "Fullstack developer",
