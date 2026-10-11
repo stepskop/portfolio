@@ -1,6 +1,6 @@
 const experiencesData = [
 	{
-		name: "Backend engineer",
+		name: "Backend Engineer",
 		company: {
 			name: "Apify",
 			link: "https://apify.com"
@@ -19,7 +19,7 @@ const experiencesData = [
 		description: "Building API, backend services, IAM and infra, of the big scale and highly available systems. Deploying and scaling custom data automation tools."
 	},
 	{
-		name: "Backend / Infra engineer",
+		name: "Backend & Infra Engineer",
 		company: {
 			name: "HAXAGON",
 			link: "https://haxagon.cz"
@@ -38,7 +38,7 @@ const experiencesData = [
 		description: "Building backend of interactive CTF platform, including API, services and IAM. Maintaining Ansible roles for our instance agents on AWS and their system-level monitoring. Deploying infra on Kubernetes."
 	},
 	{
-		name: "Fullstack developer",
+		name: "Fullstack Developer",
 		company: {
 			name: "Pokhec",
 			link: undefined
@@ -57,7 +57,7 @@ const experiencesData = [
 		description: "Creation and management of website in Sveltekit about mentoring programs including CMS built on top of firestore."
 	},
 	{
-		name: "CyberSec CTF creator",
+		name: "CyberSec CTF Creator",
 		company: {
 			name: "HAXAGON",
 			link: "https://haxagon.cz"
@@ -76,7 +76,7 @@ const experiencesData = [
 		description: "Idea making and building cybersecurity scenarios for our CTF platform. Providing challenge Docker images with e-shop scale apps."
 	},
 	{
-		name: "Testing engineer",
+		name: "Testing Engineer",
 		company: {
 			name: "HAXAGON",
 			link: "https://haxagon.cz"
@@ -95,7 +95,7 @@ const experiencesData = [
 		description: "Creation of custom framework for E2E testing built on top of Playwright. Managing CI/CD pipelines. Developing E2E and ACL testing."
 	},
 	{
-		name: "Coding tutor",
+		name: "Coding Tutor",
 		company: {
 			name: "Logiscool",
 			link: "https://logiscool.com/cz/"
